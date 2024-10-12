@@ -10,18 +10,36 @@
     failure of an asynchronous operation
 
     <script>
-      const cart = ['Mobile', 'Laptop', 'Book'];
+      ////////////-------------State of promise-------///
+
+      // Pending= The initial state neither fullfilled nor rejected ,
+      //fulfilled= The opeartion completed successfully,
+      //Rejected= The operation failed
+
+      //---------Key Method of promise----------------//
+      //.then()=this method is invoked when a promise is resolved successfully
+      //.catch()=this method is invoked when promise is rejected
+      //.finally()=
+
+      // Promise.all()=it takes an  array of promises and return a single promise that reolves all promise have resolved or reject
+      //Promise.race()=
+
+      // const cart = ['Mobile', 'Laptop', 'Book'];
 
       //wrong way
-      createOrder(cart, function (orderId) {
-        proceedToPayment(orderId);
-      });
+      // createOrder(cart, function (orderId) {
+      //   proceedToPayment(orderId);
+      // });
 
-      const promise = createOrder(cart);
+      //promise
+      // const promise = createOrder(cart);
 
-      promise.then(function (orderId) {
-        proceedToPayment(orderId);
-      });
+      // promise.then(function (orderId) {
+      //   proceedToPayment(orderId);
+      // });
+
+      const GITHUB_API = 'https://api.github.com/users/Faiznhmd/';
+      const user = fetch(GITHUB_API);
     </script>
   </body>
 </html>
