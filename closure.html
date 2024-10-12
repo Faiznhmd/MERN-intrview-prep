@@ -1,0 +1,59 @@
+<!-- What is closure?  -->
+<!-- = A closure is a function that access variable from the outer function even that
+outer function has been returned -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function x() {
+        var a = 24;
+        function y() {
+          console.log(a);
+        }
+        y();
+      }
+      x();
+
+      function x() {
+        var a = 24;
+        function y() {
+          console.log(a);
+        }
+        a = 100;
+        return y;
+      }
+      var z = x();
+      console.log(z);
+      z();
+
+      // same thing
+      function x() {
+        var a = 24;
+        return function y() {
+          console.log(a);
+        };
+      }
+      var z = x();
+      console.log(z);
+
+      function z() {
+        var b = 900;
+        function x() {
+          var a = 24;
+          function y() {
+            console.log(a, b);
+          }
+          y();
+        }
+        x();
+      }
+      z();
+    </script>
+  </body>
+</html>
