@@ -49,6 +49,12 @@
       book_list.innerHTML = '<h2>Hello from new HTML</h2>';
       book_list.innerHTML += '<p>This is how you add HTML</p>';
 
+      //node type
+      const main = document.querySelector('#main-title');
+      console.log('.main-title node type is', main.nodeType);
+      console.log('.main-title node type is', main.nodeName);
+      console.log('.main-title node type is', main.hasChildNodes());
+
       // when you want to get element by ID and u want to use querySelecter then use like this
       // QuerySelcter("#listype")
 
