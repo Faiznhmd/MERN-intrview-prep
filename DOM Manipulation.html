@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="main-title">Welcome to querySelector Example</h1>
+    <p class="description">This is a paragraph with the class 'description'.</p>
+    <p>This is a regular paragraph without any class.</p>
+    <div id="book-lists">
+      <div class="book_list">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+      </div>
+      <h2 class="title">Bokoks read</h2>
+      <ul>
+        <li><span class="name">Faizan</span></li>
+        <li><span class="name">Hlo</span></li>
+        <li><span class="name">dangerous</span></li>
+        <li><span class="name">school</span></li>
+      </ul>
+    </div>
+    <script>
+      //for the ID
+      let books = document.querySelectorAll('#book-list li .name');
+
+      //this will get all tha span
+
+      // Array.from(books).forEach(function (book) {
+      //   console.log(book);
+      // });
+
+      //changing text and html content
+      //this will change the text
+
+      // Array.from(books).forEach(function (book) {
+      //   book.textContent = 'test';
+      // });
+
+      //append=(this will add other text on the existing etxt)
+
+      // Array.from(books).forEach(function (book) {
+      //   book.textContent += ' (test)';
+      // });
+
+      //update html
+      let book_list = document.querySelector('#book-lists');
+      book_list.innerHTML = '<h2>Hello from new HTML</h2>';
+      book_list.innerHTML += '<p>This is how you add HTML</p>';
+
+      // when you want to get element by ID and u want to use querySelecter then use like this
+      // QuerySelcter("#listype")
+
+      // when you want to get element by class and u want to use querySelecter then use like this
+      // QuerySelcter(".listype")
+
+      // when you want to get element by tag name and u want to use querySelecter then use like this
+      // QuerySelcter("p")
+
+      //one other method to get element by ID is use to getElementById("title")
+
+      //one other method to get element by class is use to getElementByClassName("title")
+
+      //one other method to get element by Tag Name is use to getElementByTagName("p")
+    </script>
+  </body>
+</html>
