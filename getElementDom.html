@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bgBlack">
+      <h1 id="title" class="heading">DOM Manipulation learning</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <script>
+      const title = document.getElementById('title');
+      const titles = document.getElementsByClassName('heading');
+
+      console.log(title);
+      console.log(titles);
+
+      //add style
+      title.style.color = 'red';
+      title.style.backgroundColor = 'green';
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- //How to create a new Element -->
+    <!-- 1. First get parent element and check how many element -->
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+      <div class="day">Friday</div>
+    </div>
+    <script>
+      // how to get a parent
+
+      // let parents = document.querySelector('.parent');
+      // console.log(parents);
+      // console.log(parents.children);
+
+      // get all element
+
+      // for (let i = 0; i < parents.children.length; i++) {
+      //   console.log(parents.children[i].innerHTML);
+      // }
+
+      // console.log(parents.firstElementChild); //get first element
+
+      // console.log(parents.lastElementChild); //get last element
+
+      //child to parent
+
+      //first get a child
+      // const days = document.querySelector('.day');
+      // console.log(days);
+
+      // //get a parent through child
+      // console.log(days.parentElement);
+
+      // // get a next element
+      // console.log(days.nextElementSibling); //= tuesday
+    </script>
+  </body>
+</html>
